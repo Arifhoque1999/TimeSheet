@@ -1,0 +1,124 @@
+nav image {
+  width: 70px;
+}
+
+nav {
+  background-color: #0e4c57;
+  padding: 10px;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+li a {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+body {
+  background-color: #e6f1f6;
+
+  font-family: Arial, sans-serif;
+}
+section {
+  background: #fcfdeb;
+  height: 99vh;
+  padding-top: 20px;
+}
+.container {
+  max-width: 400px;
+height: 590px;
+  margin: 0 auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+padding-top: 10px;
+  background-color: #fff;
+
+  border-radius: 5px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  text-align: center;
+
+  color: #333;
+margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-weight: bold;
+
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea,
+.form-group select {
+  width: 95%;
+
+  padding: 10px;
+
+  border-radius: 3px;
+
+  border: 1px solid #ccc;
+
+  color: #333;
+}
+
+.form-group textarea {
+  resize: vertical;
+
+  height: 100px;
+}
+
+.form-group input[type="submit"] {
+  display: block;
+
+  width: 100%;
+
+  padding: 10px;
+
+  border: none;
+
+  background-color: #4caf50;
+
+  color: #fff;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  border-radius: 3px;
+
+  transition: background-color 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #45a049;
+}

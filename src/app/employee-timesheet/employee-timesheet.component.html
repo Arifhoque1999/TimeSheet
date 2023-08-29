@@ -1,0 +1,77 @@
+<section>
+  <div class="container">
+    <h2>TimeSheet Application</h2>
+    <form (submit)="employeeTimeSheet()">
+      <div class="form-group">
+        <label for="empid">Employee ID:</label>
+        <input
+          type="text"
+          id="empid"
+          name="empid"
+          [(ngModel)]="this.id"
+          required
+          readonly
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" [(ngModel)]="date" required />
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" [(ngModel)]="time" required />
+      </div> -->
+      <label for="time"><h4>Select Time:</h4></label>
+
+      <select
+        style="padding: 7px; margin-bottom: 7px"
+        [(ngModel)]="selectedOption"
+        name="time"
+        id="time"
+        (change)="onOptionChange($event)"
+      >
+        <option value="">Select Time</option>
+        <option value="9">09:00 hr</option>
+        <option value="4.5">04:30 hr</option>
+      </select>
+
+      <div class="form-group">
+        <label for="projectName">ProjectName:</label>
+        <input
+          type="text"
+          id="projectName"
+          name="projectName"
+          [(ngModel)]="projectName"
+          required
+        />
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="status">Status:</label>
+        <input
+          type="text"
+          id="status"
+          name="status"
+          [(ngModel)]="status"
+          required
+        />
+      </div> -->
+
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea
+          id="description"
+          name="description"
+          [(ngModel)]="description"
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </div>
+</section>

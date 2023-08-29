@@ -1,0 +1,79 @@
+nav image {
+  width: 70px;
+}
+
+nav {
+  background-color: #0e4c57;
+  padding: 10px;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+li a {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+
+h1 {
+  text-align: center;
+  color: #000; /* Heading color */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #222; /* Header background color */
+  color: #fff; /* Header text color */
+}
+
+td button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+td button.approve {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+td button.reject {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.status-approved {
+  font-weight: bold;
+  color: #008000;
+}
+
+.status-rejected {
+  font-weight: bold;
+  color: #ff0000;
+}

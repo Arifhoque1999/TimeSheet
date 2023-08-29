@@ -1,0 +1,174 @@
+nav image {
+  width: 70px;
+}
+
+nav {
+  background-color: #0e4c57;
+  padding: 10px;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+li a {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#container {
+  font-family: Arial, sans-serif;
+  background-color: #fbfcea;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 87vh;
+}
+
+.dashboard {
+  width: 30%;
+  height: 89vh;
+  margin: 0;
+  margin-top: 0px;
+  background-color: #fbfcea;
+  border-radius: 0px 0px 5px 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  color: black;
+}
+
+.icon {
+  text-align: center;
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.icon img {
+  width: 200px;
+  height: 200px;
+}
+
+.employee-name {
+  text-align: center;
+  // font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.emp-id {
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.data-field-f {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.margin-top {
+  margin-top: 80px;
+  button {
+    padding: 15px;
+  }
+}
+
+.data-field {
+  margin-bottom: auto;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.field-label {
+  font-weight: bold;
+}
+
+.field-value {
+  margin-top: 5px;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+#right-section {
+  width: 70%;
+}
+#totalNavabr {
+  height: 120px;
+  width: 100%;
+}
+
+.totaliteam {
+  height: 115px;
+  width: 97%;
+  background-color: #ededed;
+  margin: auto;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-around;
+}
+.total-count {
+  padding-top: 20px;
+}
+.right-border {
+  height: 100px;
+  margin-top: -8px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+#total-leave-approval {
+  height: 30vh;
+  width: 100%;
+  // border: 2px solid red;
+}
+h3 {
+  margin-top: 3px;
+ 
+  // font-family: serif;
+  // font-family: monospace;
+}
+// #name{
+//   margin-left: -60px;
+//   span{
+//     margin-left: 78px;
+//   }
+// }
+// #Email{
+//   margin-left: -38px;
+//   span{
+//     margin-left: 40px;
+//   }
+// }
+// #Phone-fild{
+//   margin-left: -39px;
+//   span{
+//     margin-left: 30px;
+//   }
+// }
+span{
+  font-weight: normal;
+  // font-family: monospace;
+  // font-family: serif;
+}
+#ok{
+  background-color: #0e4c57;
+  border: none;
+  outline: none;
+  font-size: large;
+  color: white;
+}

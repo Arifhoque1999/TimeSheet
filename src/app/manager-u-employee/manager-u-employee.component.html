@@ -1,0 +1,24 @@
+<nav>
+  <img routerLink="/home" src="../../assets/mindsprint-logo.svg" alt="img" />
+  <ul>
+    <li><a routerLink="/admin/{{this.id}}">Home</a></li>
+    <li><a routerLink="/login">Logout</a></li>
+    <!-- <li><a routerLink="/signup">SignUp</a></li> -->
+  </ul>
+</nav>
+
+<div id="container-emp"  >
+  <div class="employee-container-emp" *ngFor="let e of data"  >
+    <div class="image-container">
+      <img src="../../assets/user-avatar.png" alt="Employee 1" />
+    </div>
+    <h2>{{e.name}}</h2>
+    <p class="designation">{{ e.empId }}</p>
+    <p>Department: {{e.department}}</p>
+    <p>Phone:{{e.phno}}</p>
+    <!-- <p>Status: <span class="active-dot"></span> Active</p> -->
+    <button (click)="onupdate(e.empId)">Update</button>
+    <!-- <button (click)="ondelete(e.empId)" >Delete</button> -->
+  </div>
+ 
+</div>

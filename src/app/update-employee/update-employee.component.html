@@ -1,0 +1,63 @@
+<nav>
+  <img src="../../assets/mindsprint-logo.svg" alt="img" />
+  <ul>
+    <li><a routerLink="/admin">Home</a></li>
+    <li><a routerLink="/login">logout</a></li>
+    <li><a routerLink="/SignUp">SignUp</a></li>
+  </ul>
+</nav>
+<div id="full-item">
+  <div class="container">
+    <h1>Add Employee System</h1>
+
+    <div class="form">
+      <form  (ngSubmit)="update()">
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter Name"
+          [(ngModel)]="data.name"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter Email"
+          [(ngModel)] = "data.email_Id"
+          required
+        />
+        <input
+          type="text"
+          name="empId"
+          placeholder="Create Employee Id"
+          [(ngModel)] = "data.empId"
+          required
+        />
+        <input
+          type="text"
+          name="number"
+          placeholder="Enter Your number"
+          [(ngModel)] = "data.phno"
+          required
+        />
+        <input
+          type="text"
+          name="department"
+          placeholder="Enter Department"
+          [(ngModel)] = "data.department"
+          required
+        />
+        <input
+          type="text"
+          name="type"
+          placeholder="Enter type"
+          [(ngModel)] = "data.type"
+          required
+        />
+
+        <input type="submit"  value="Add Employee" />
+      </form>
+    </div>
+  </div>
+</div>

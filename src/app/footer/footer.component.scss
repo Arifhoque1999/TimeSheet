@@ -1,0 +1,159 @@
+/* Footer container */
+
+.footer {
+  background-color: #06424c;
+
+  padding: 20px 0;
+
+  color: white;
+
+  text-decoration: none;
+}
+
+/* Fixed width container within the footer */
+
+.fixed-width-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 0 20px;
+}
+
+/* Logo container */
+
+.footer__img-container {
+  width: 100px;
+}
+
+/* Footer items wrapper */
+
+.footer__items-wrapper {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 20px;
+}
+
+/* Footer items container */
+
+.footer__items-container {
+  flex: 1;
+
+  margin-right: 30px;
+}
+
+/* Footer item heading */
+
+.footer__head {
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+/* Footer items list */
+
+.footer__items-list {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+/* Footer item */
+
+.footer__items {
+  margin-bottom: 10px;
+}
+
+/* Footer item link */
+
+.footer__items-link {
+  color: whitesmoke;
+
+  text-decoration: none;
+}
+
+/* Footer social media wrapper */
+
+.footer__social-media-wrapper {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+/* Footer copyright */
+
+.footer__copyright {
+  font-size: 12px;
+}
+
+/* Footer social media container */
+
+.footer__social-media-container {
+  display: flex;
+
+  gap: 10px;
+}
+
+/* Footer social media image link */
+
+.footer__image-link {
+  width: 24px;
+
+  height: 24px;
+}
+
+/* Back to top button */
+
+.footer__btnBackToTop {
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 20px;
+
+  background-color: #333;
+
+  color: #fff;
+
+  border: none;
+
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+/* Arrow up icon in the back to top button */
+
+.footer__arrow-up {
+  border: solid white;
+
+  border-width: 0 2px 2px 0;
+
+  display: inline-block;
+
+  padding: 4px;
+
+  transform: rotate(-135deg);
+}
+
+/* OneTrust Cookies Settings button */
+
+.ot-sdk-show-settings {
+  background-color: #333;
+
+  color: #fff;
+
+  border: none;
+
+  padding: 10px;
+
+  cursor: pointer;
+}

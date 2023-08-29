@@ -1,0 +1,88 @@
+<div *ngIf="data">
+  <nav>
+    <img src="../../assets/logo2.svg" alt="" />
+
+    <ul>
+      <li><a routerLink="/employee/{{ data.empId }}">Home</a></li>
+      <li><a routerLink="/leave-form/{{data.empId}}">Leave</a></li>
+      <li><a routerLink="/lop/{{this.id}}">Lop</a></li>
+      <li><a routerLink="/Leave-Status/{{ data.empId }}">Leave Status</a></li>
+      <li><a routerLink="/timesheet-Status/{{ data.empId }}">TimeSheet Status</a></li>
+      <li><a href="/timesheet/{{ data.empId }}">TimeSheet</a></li>
+      <li><a href="#">LogOut</a></li>
+    </ul>
+  </nav>
+
+  <div id="container">
+    <div class="dashboard">
+      <div class="icon">
+        <img src="../../assets/user-avatar (1).png" alt="Employee Icon" />
+      </div>
+      <div class="emp-id">
+        <h3>
+          Global ID:<span>{{ data.empId }}</span>
+        </h3>
+      </div>
+      <div class="employee-name">
+        <h3 id="name">
+          Name: <span>{{ data.name }}</span>
+        </h3>
+      </div>
+      <div class="data-field-f">
+        <div class="field-label">
+          <h3 id="Email">
+            Email ID: <span>{{ data.email_Id }}</span>
+          </h3>
+        </div>
+        <div class="field-value">
+          <h3>
+          Department: <span>{{ data.department }}</span>
+          </h3>
+        </div>
+        <div class="field-value">
+          <h3 id="Phone-fild">
+            Phone Number: <span>{{ data.phno }}</span>
+          </h3>
+        </div>
+      </div>
+      <div class="data-field-f">
+        <div class="field-value">
+          <h3 style="margin-bottom: 2px;">
+            Manager 
+          </h3>
+          <h3 style="margin-top: 0px;">{{ data.managerName }}</h3>
+        </div> 
+      </div>
+      <div class="data-field-f margin-top">
+        <button (click)="onDownload()">Download Your TimeSheet</button>
+      </div>
+    </div>
+
+    <div id="right-section" *ngIf="count">
+      <div id="totalNavabr" >
+        <div class="totaliteam">
+          <div class="total-count">
+            <div class="right-border">
+              <h3>{{count.count_of_leaves}}</h3>
+              <p>Total Leaves</p>
+            </div>
+          </div>
+          <div class="total-count">
+            <div class="right-border">
+              <h3>{{count.totalHours}}</h3>
+              <p>Total Work Hours</p>
+            </div>
+          </div>
+          <div class="total-count">
+            <div class="right-border">
+              <h3>{{data.lop}}</h3>
+              <p> Total Lop</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="total-leave-approval"></div>
+      <div id="total-leave-approval"></div>
+    </div>
+  </div>
+</div>

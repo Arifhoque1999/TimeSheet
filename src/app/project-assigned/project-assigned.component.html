@@ -1,0 +1,31 @@
+<h1>Project Form</h1>
+
+<form id="projectForm" onsubmit="submitForm(event)">
+  <label for="projectName">Project Name:</label>
+  <input type="text" id="projectName" name="projectName" required /><br /><br />
+
+  <label>Employee IDs:</label>
+  <ul id="employeeList">
+    <li>
+      <input type="checkbox" name="employeeList[]" value="1" /> Employee 1
+    </li>
+    <li>
+      <input type="checkbox" name="employeeList[]" value="2" /> Employee 2
+    </li>
+    <li>
+      <input type="checkbox" name="employeeList[]" value="3" /> Employee 3
+    </li>
+    <li>
+      <input type="checkbox" name="employeeList[]" value="4" /> Employee 4
+    </li>
+    <li>
+      <input type="checkbox" name="employeeList[]" value="5" /> Employee 5
+    </li>
+  </ul>
+  <br />
+
+  <input type="submit" value="Submit" />
+</form>
+
+<h2>Selected Employee IDs:</h2>
+<ul id="selectedEmployees"></ul>

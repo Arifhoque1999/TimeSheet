@@ -1,0 +1,99 @@
+<div *ngIf="data">
+  <nav>
+    <img routerLink="/home" src="../../assets/mindsprint-logo.svg" alt="img" />
+    <ul>
+      <li><a routerLink="/admin">Home</a></li>
+      <li><a routerLink="/add-employee/{{ data.empid }}">Add Employee</a></li>
+      <li><a routerLink="/login">logout</a></li>
+    </ul>
+  </nav>
+  <div id="container">
+    <div id="admin-header">
+      <div id="addmin-img">
+        <img src="https://www.svgrepo.com/show/5125/avatar.svg" alt="" />
+        <p>Name: {{ data.name }}</p>
+        <p>Global ID: {{ data.empid }}</p>
+      </div>
+      <ul>
+        <li routerLink="/admin">
+          <div class="list">
+            <img src="../../assets/dashboard.png" alt="" />
+          </div>
+          <div id="list-p"><p>DashBoard</p></div>
+        </li>
+        <li>
+          <div class="list">
+            <img src="../../assets/freelancer.png" alt="" />
+          </div>
+          <div id="list-p"><p>Profile</p></div>
+        </li>
+        <li routerLink="/admin-employee/{{ this.id }}">
+          <div class="list"><img src="../../assets/employee.png" alt="" /></div>
+          <div id="list-p"><p>All Employee</p></div>
+        </li>
+        <li>
+          <div class="list">
+            <img src="../../assets/marketing.png" alt="" />
+          </div>
+          <div id="list-p"><p>Grades</p></div>
+        </li>
+        <li routerLink="/">
+          <div class="list"><img src="../../assets/logout.png" alt="" /></div>
+          <div id="list-p"><p>Log Out</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="right-section">
+      <div id="Section-item">
+        <div
+          routerLink="/leave/{{ data.empid }}"
+          id="leave-box"
+          class="item-button"
+        >
+          <img src="../../assets/evacuation-plan.png" alt="" />
+          <p>Leave</p>
+        </div>
+        <div
+          id="lop-box"
+          class="item-button"
+          routerLink="/manager-lop/{{this.id}}"
+        >
+          <img src="../../assets/money-bag (1).png" alt="" />
+          <p>Lop</p>
+        </div>
+        <div
+          routerLink="/admin-employee/{{ data.empid }}"
+          id="emp-box"
+          class="item-button"
+        >
+          <img src="../../assets/profiles.png" alt="" />
+          <p>Employee Details</p>
+        </div>
+        <div
+          routerLink="/TimeSheet/{{ data.empid }}"
+          id="emp-box"
+          class="item-button"
+        >
+          <img src="../../assets/schedule.png" alt="" />
+          <p>TimeSheet</p>
+        </div>
+
+        <!-- <div
+          routerLink="/add/{{ data.empid }}"
+          id="leave-box"
+          class="item-button"
+        >
+          <img src="../../assets/profiles.png" alt="" />
+          <p>Add Project</p>
+        </div> -->
+
+        <!-- <div routerLink="/project-assigned" id="lop-box" class="item-button">
+          <img src="../../assets/profiles.png" alt="" />
+          <p>Project Allocation</p>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

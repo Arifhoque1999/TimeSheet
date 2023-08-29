@@ -1,0 +1,38 @@
+<!-- <app-employeedata></app-employeedata> -->
+<app-navbar></app-navbar>
+<div id="all-item">
+  <div class="logo"></div>
+  <div class="login-block">
+    <h1>User Login</h1>
+    <form action="">
+      <input
+        type="text"
+        value=""
+        placeholder="User ID"
+        id="username"
+        name="username"
+        [(ngModel)]="id"
+      />
+      <input
+        type="password"
+        value=""
+        placeholder="Password"
+        id="password"
+        name="password"
+        [(ngModel)]="password"
+      />
+
+      <select [(ngModel)]="selectedOption" name="type" id="type" (change)="onOptionChange($event)">
+        <option value="">Uesr Type</option>
+        <option  value="employee" selected>Employee</option>
+        <option value="Manager">Manager</option>
+
+      </select>
+    </form>
+    <button (click)="userLogin()">LogIn</button>
+    <div id="newuser">
+      <a href="/index.html"><p></p></a>
+      <a href="/index.html"><p></p></a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<div>
+
+  <nav>
+    <img src="../../assets/logo2.svg" alt="" />
+  
+    <ul>
+      <li><a routerLink="/employee/{{this.id}}">Home</a></li>
+      <li><a routerLink="/leave-form/{{this.id}}">Leave</a></li>
+      <li><a routerLink="/lop/{{this.id}}">Lop</a></li>
+      <li><a routerLink="/Leave-Status/{{this.id}}">Leave Status</a></li>
+      <!-- <li><a href="/timesheet/">TimeSheet</a></li> -->
+      <li><a href="#">LogOut</a></li>
+    </ul>
+  </nav>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h1>TimeSheet Status</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Project Name</th>
+        <th>Description</th>
+        <th>Time</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let e of timeSheetStatus">
+      <tr>
+        <td>{{ e.date }}</td>
+        <td>{{ e.projectName }}</td>
+        <td>{{ e.description }}</td>
+        <td>{{ e.time }}</td>
+        <td class="status-approved">{{ e.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>

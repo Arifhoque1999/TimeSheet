@@ -1,0 +1,132 @@
+#container {
+  height: 100vh;
+  background-color: #000846;
+  display: flex;
+  justify-content: space-between;
+}
+
+#admin-header {
+  padding: 10px;
+  height: 95vh;
+  width: 25%;
+  min-width: 250px;
+  background-color: #000846;
+  box-shadow: 0 8px 8px -4px rgb(143, 216, 240);
+}
+
+#addmin-img {
+  margin-top: 20px;
+  text-align: center;
+  border-bottom: 3px solid black;
+  box-shadow: 0 8px 8px -4px rgb(143, 216, 240);
+}
+#addmin-img img {
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  cursor: pointer;
+}
+#list-p {
+  margin-top: -15px;
+  margin-left: 10px;
+}
+#list-p p{
+   margin-top: 40px;
+  font-size: 17px;
+}
+li {
+  color: white;
+  font-size: 25px;
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+}
+
+ul img {
+  height: 35px;
+  padding: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#right-section {
+  width: 74%;
+}
+
+#Section-item {
+  height: 60vh;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.item-button {
+  margin-top: 50px;
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.item-button img {
+  height: 64px;
+  width: 64px;
+  margin-top: 40px;
+}
+.item-button p {
+  margin-top: 55px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#leave-box {
+  background-color: #00a78e;
+  box-shadow: 0 3px 10px rgb(0 0 0);
+}
+
+#lop-box {
+  background-color: #2441e7;
+  box-shadow: 0 3px 10px rgb(0 0 0);
+}
+#emp-box {
+  background-color: #ecd06f;
+  box-shadow: 0 3px 10px rgb(0 0 0);
+}
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0e4c57;
+  color: white;
+  img {
+    height: 150px;
+    width: 160px;
+    margin-top: -40px;
+    margin-left: 10px;
+  }
+  ul {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: end; //warning
+  }
+  li {
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+  }
+}
+#addmin-img p {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+}

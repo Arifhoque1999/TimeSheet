@@ -1,0 +1,33 @@
+<nav>
+  <img src="../../assets/logo2.svg" alt="" />
+
+  <ul>
+    <li><a routerLink="/employee/{{ this.id }}">Home</a></li>
+    <li><a routerLink="/Leave-Status/{{ this.id }}">Leave Status</a></li>
+    <li><a routerLink="/leave-form/{{ this.id }}">Leave</a></li>
+    <li>
+      <a routerLink="/timesheet-Status/{{ this.id }}">TimeSheet Status</a>
+    </li>
+    <li><a href="/timesheet/{{ this.id }}">TimeSheet</a></li>
+    <li><a href="#">LogOut</a></li>
+  </ul>
+</nav>
+<h1 id="ok">Lop Status</h1>
+<table >
+  <thead>
+    <tr>
+      <th>Employee ID</th>
+      <th>Date</th>
+      <th>LOP</th>
+    </tr>
+  </thead>
+
+ 
+  <tbody *ngFor="let e of lopCount">
+    <tr>
+      <td>{{e.empId}}</td>
+      <td>{{ e.date }}</td>
+      <td>{{e.lop}}</td>
+    </tr>
+  </tbody>
+</table>

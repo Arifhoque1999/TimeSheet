@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<div id="container">
+  
+  <div id="all-input-box">
+    <h2>Manager SingUp</h2>
+    <input
+      type="text"
+      placeholder="Enter Your Name"
+      name="name"
+      [(ngModel)]="name"
+    />
+    <input
+      type="number"
+      placeholder="Create an ID"
+      name="empid"
+      [(ngModel)]="empid"
+    />
+    <input
+      type="email"
+      placeholder="Enter Your Email"
+      name="emailid"
+      [(ngModel)]="emailid"
+    />
+    <input
+      type="number"
+      placeholder="Enter Your Phone Number"
+      name="phoneno"
+      [(ngModel)]="phoneno"
+    />
+    <input
+      type="password"
+      placeholder="Create Password"
+      name="password"
+      [(ngModel)]="password"
+    />
+    
+    <button (click)="addManager()">SignUp</button>
+  </div>
+</div>

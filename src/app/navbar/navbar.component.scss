@@ -1,0 +1,31 @@
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0e4c57;
+  color: white;
+  margin-top: -5px;
+  img {
+    height: 150px;
+    width: 160px;
+    margin-top: -40px;
+    margin-left: 10px;
+  }
+  ul {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: end; //warning
+  }
+  li {
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+}

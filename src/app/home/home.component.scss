@@ -1,0 +1,219 @@
+
+//                                           main section
+#main {
+  height: 70vh;
+  // background-image: url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid red;
+}
+
+/* Footer Styling */
+
+.footer {
+  background-color: #0e4c57;
+
+  /* padding: 210px 0; */
+}
+
+.footer__img-container {
+  margin-top: 3rem;
+
+  margin-bottom: 5rem;
+}
+
+.footer__container {
+  display: flex;
+
+  justify-content: center;
+
+  /* min-height: 100vh; */
+}
+
+.footer__items-wrapper {
+  display: flex;
+
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+
+.footer__items-container {
+  flex-basis: 25%;
+
+  margin-bottom: 2rem;
+}
+
+.footer__lg {
+  width: 60%;
+}
+
+.footer__head {
+  font-weight: bold;
+
+  margin-bottom: 1.5rem;
+
+  color: #ffffff;
+
+  font-size: 1.5rem;
+}
+
+.footer__items-list {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+.footer__items {
+  margin-bottom: 1rem;
+}
+
+.footer__items-link {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 1.2rem;
+}
+
+.footer__items-link:hover {
+  text-decoration: underline;
+}
+
+.footer__social-media-wrapper {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 2rem;
+}
+
+.footer__social-media-container {
+  margin-left: 10px;
+}
+
+.footer__image-link {
+  width: 20px;
+
+  height: 20px;
+}
+
+.footer__btnBackToTop {
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 20px;
+
+  background-color: #555555;
+
+  color: #ffffff;
+
+  border: none;
+
+  padding: 10px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.footer__line {
+  width: 100%;
+
+  border: none;
+
+  border-top: 1px solid #ffffff;
+
+  margin: 20px 0;
+}
+
+.footer__left {
+  margin-right: auto;
+}
+
+.footer__left p {
+  color: #ffffff;
+
+  margin: 0;
+
+  font-size: 1.1rem;
+}
+
+.footer__right {
+  display: flex;
+
+  align-items: center;
+}
+
+.footer__copyright {
+  color: #ffffff;
+
+  margin-right: 10px;
+}
+
+/* OneTrust Cookies Settings Button */
+
+.ot-sdk-show-settings {
+  display: none;
+}
+
+body {
+  margin: 0;
+}
+
+.con_img {
+  cursor: pointer;
+}
+
+.con_img img{
+  height: 30px;
+  width: 30px;
+}
+/* Responsive styles */
+
+/* Styles for screens with a maximum width of 600px */
+
+@media only screen and (max-width: 600px) {
+  .footer__lg {
+    width: 100%;
+  }
+
+  .footer__img-container {
+    text-align: center;
+
+    margin-bottom: 2rem;
+  }
+
+  .footer__items-container {
+    flex-basis: 50%;
+  }
+
+  .footer__social-media-wrapper {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+  }
+
+  .footer__left {
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 1rem;
+  }
+
+  .footer__social-media-container {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .footer__btnBackToTop {
+    display: none;
+  }
+}

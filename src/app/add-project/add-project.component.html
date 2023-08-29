@@ -1,0 +1,34 @@
+<nav>
+    <img routerLink="/home" src="../../assets/mindsprint-logo.svg" alt="img" />
+    <ul>
+      <li><a routerLink="/admin">Home</a></li>
+      <li><a routerLink="/login">Logout</a></li>
+      <li><a routerLink="/add-employee/">Add Employee</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <h2>Add Project</h2>
+    <form id="project-form" >
+      <div class="form-group">
+        <label for="project-name">Project Name:</label>
+        <input type="text" id="project-name" name="projectname" [(ngModel)]="projectName" required>
+      </div>
+      <div class="form-group">
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" name="startdate" [(ngModel)]="startdate" required>
+      </div>
+      <div class="form-group">
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date" name="enddate" [(ngModel)]="endDate" required>
+      </div>
+      <div class="form-group">
+        <label for="project-description">Project Description:</label>
+        <textarea id="project-description" name="projectdescription" [(ngModel)]="projectDescription" required></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Create Project" (click)="createProject()">
+      </div>
+    </form>
+  </div>
+  

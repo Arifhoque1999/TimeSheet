@@ -1,0 +1,43 @@
+<nav>
+  <img src="../../assets/mindsprint-logo.svg" alt="img" />
+  <ul>
+    <li><a routerLink="/admin/{{this.id}}">Home</a></li>
+    <li><a routerLink="/add-employee/{{this.id}}">Add Employee</a></li>
+    <li><a routerLink="/login">Logout</a></li>
+  </ul>
+</nav>
+
+<h1>Leave Approval System</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Employee ID</th>
+      <th>Leave Reason</th>
+      <th>Date</th>
+      <th>From Date</th>
+      <th>To Date</th>
+      <th>Type</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let e of data">
+      <td>{{ e.empId }}</td>
+      <td>{{ e.reason }}</td>
+      <td>2023-07-01</td>
+      <td>{{ e.start_Date }}</td>
+      <td>{{ e.end_Date }}</td>
+      <td>{{ e.type }}</td>
+      <td>
+        <span class="status-label">{{ e.approval }}</span>
+      </td>
+      <td>
+        <button class="approve" (click)="approveLeave(e.id)">Approve</button>
+        <button class="reject" (click)="rejectLeave(e.id)">Reject</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

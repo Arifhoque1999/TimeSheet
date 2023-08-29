@@ -1,0 +1,36 @@
+<nav>
+  <img src="../../assets/logo2.svg" alt="" />
+
+  <ul>
+    <li><a routerLink="/employee/{{this.id}}">Home</a></li>
+    <li><a routerLink="/leave-form/{{this.id}}">Leave</a></li>
+    <li><a routerLink="/lop/{{this.id}}">Lop</a></li>
+    <li><a routerLink="/timesheet-Status/{{this.id}}">TimeSheet Status</a></li>
+    <li><a href="/timesheet/{{this.id}}">TimeSheet</a></li>
+    <li><a href="#">LogOut</a></li>
+  </ul>
+</nav>
+
+
+<h1 id="ok">Leave Status</h1>
+<hr>
+<table class="table" >
+  <thead>
+    <tr>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Type</th>
+      <th>Reason</th>
+      <th>Approval</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let e of leaveStatus" >
+    <tr id="tr-list">
+      <td>{{ e.start_Date }}</td>
+      <td>{{ e.end_Date }}</td>
+      <td>{{ e.type }}</td>
+      <td>{{ e.reason }}</td>
+      <td>{{ e.approval }}</td>
+    </tr>
+  </tbody>
+</table>

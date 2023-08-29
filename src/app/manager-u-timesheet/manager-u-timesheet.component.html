@@ -1,0 +1,41 @@
+<nav>
+  <img routerLink="/home" src="../../assets/mindsprint-logo.svg" alt="img" />
+  <ul>
+    <li><a routerLink="/admin/{{this.id}}">Home</a></li>
+    <li><a routerLink="/add-employee/{{this.id}}">Add Employee</a></li>
+    <li><a routerLink="/login">logout</a></li>
+    
+  </ul>
+</nav>
+<h1>TimeSheet Approval System</h1>
+
+<table>
+  <thead>
+    <tr>
+      <!-- <th>Employee ID</th> -->
+      <th>EMPLOYEE ID</th>
+      <th>Date</th>
+      <th>TIME</th>
+      <th>Description</th>
+
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody *ngFor="let e of data">
+    <tr>
+      <!-- <td>{{e.id}}</td> -->
+      <td>{{e.empid}}</td>
+      <td>{{e.date}}</td>
+      <td>{{e.time}}</td>
+      <td>{{e.description}}</td>
+      <td>pending</td>
+
+      <td>
+        <button class="approve" (click)="approveTimesheet(e.id)">Approve</button>
+        <button class="reject"  (click)="rejectTimesheet(e.id)">Reject</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

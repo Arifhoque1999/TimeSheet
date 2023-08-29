@@ -1,0 +1,70 @@
+<section>
+  <div class="container">
+    <h2>Leave Management System</h2>
+
+    <form (ngSubmit)="postLeave()" action="">
+      <div class="form-group">
+        <label for="employee-id">Employee ID:</label>
+        <input
+          type="text"
+          id="employee-id"
+          name="employee-id"
+          [(ngModel)]="this.id"
+          readonly
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="from-date">From Date:</label>
+        <input
+          type="date"
+          id="from-date"
+          name="from-date"
+          [(ngModel)]="startDate"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="to-date">To Date:</label>
+        <input
+          type="date"
+          id="to-date"
+          name="to-date"
+          [(ngModel)]="endDate"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="leave-type">Leave Type:</label>
+        <select
+          id="leave-type"
+          name="leave-type"
+          [(ngModel)]="leaveType"
+          required
+        >
+          <option value="" disabled selected>Select Leave Type</option>
+          <option value="sick">Sick</option>
+          <option value="casual">Casual</option>
+          <option value="privilege">Privilege</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="leave-reason">Leave Reason:</label>
+        <textarea
+          id="leave-reason"
+          name="leave-reason"
+          [(ngModel)]="leaveReason"
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </div>
+</section>
